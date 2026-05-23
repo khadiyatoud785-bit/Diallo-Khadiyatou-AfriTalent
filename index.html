@@ -55,69 +55,86 @@
          adaptees a vos projets pour collaborer avec les meilleurs 
         talents africains sur AfriTalent 
     </h2>
-    <button>Je suis Freelances</button>
-    <button>Je cherche un frelance</button>
-    <div>
+    <div class="hero-buttons">
+    <button class="btn btn-primary">Je suis Freelances</button>
+    <button class="btn btn-outline-dark">Je cherche un freblance</button>
+    </div> 
+    <div class="hero-stats">
         <p>+2500 freelances |+800 entreprises| +12000 missions</p>
     </div>
 </section>
 <section class="cartes">
-    <h2>Comment ca marche</h2>
-    <div class="grid">
+    <h2 class="text-center mb-5">Comment ca marche</h2>
+    <div class="bento-grid">
         <div class="carte">
+            <div class="bento-item big">
             <span class="etape">01</span>
             <h3>Creer un Compte</h3>
             <p>Inscrivez-vous gratuitement et creez votre profil en quelques minutes pour commencer .</p>
         </div>
+        </div>
         <div class="cart">
+            <div class="bento-item ">
             <span class="etape">02</span>
             <h3>Explorer les missions</h3>
             <p>Parcourez des opportunites adaptees a vos competences.</p>
+            </div>
         </div>
         <div class="cart">
+             <div class="bento-item ">
             <span class="etape">03</span>
             <h3>Postuler ou Publier</h3>
             <p>Envoyez vos candidatures ou publiez vos projets facilement.</p>
+            </div>
         </div>
         <div class="cart">
+            <div class="bento-item ">
             <span>04</span>
             <h3>Collaborer</h3>
             <p>Travaillez avec des talents qualifies et developpez vos projets efficacement.</p>
+            </div>
         </div>
     </div>
 </section>
 <section>
+    <div id="carouselExample" class="carousel slide"></div>
     <h2>Temoignages</h2>
     <p> "AfriTalent m'a permis de trouver des clients tres vite."</p>
 </section>
 <section>
     <h2>Categories de services</h2>
-    <div>
+    <div class="Categories-grid">
         <div class="icon"></div> 
+        <div class="category-card"></div>
         <h3>Developpment web </h3>
         <P>+1200 Freelances</P>  
     </div>
     <div>
+        <div class="category-card">
         <div class="icon"></div> 
         <h3>Design UI/UX </h3>
         <P>+800 Freelances</P>  
     </div>
     <div>
+        <div class="category-card">
         <div class="icon"></div> 
         <h3>Marketing Digital</h3>
         <P>+950 Freelances</P>  
     </div>
     <div>
+        <div class="category-card">
         <div class="icon"></div> 
         <h3>Data & IA </h3>
         <P>+600 Freelances</P>  
     </div>
     <div>
+        <div class="category-card">
         <div class="icon"></div> 
         <h3>Redaction Tech </h3>
         <P>+500 Freelances</P>  
     </div>
     <div>
+        <div class="category-card">
         <div class="icon"></div> 
         <h3>Devops & Cloud </h3>
         <P>+400 Freelances</P>  
@@ -130,30 +147,61 @@
 </main>
     <section>
         
-        <div>
-            <img src="images/icon3.jpg" alt="icon" width="200">
+        <div id="carouselExample" class="carousel slide"data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+            <img src="images/icon3.jpg" 
+            alt="icon"class="rounded-circle mb-3" 
+            width="150" height="150">
             <h4>Fatou Fall</h4>
             <h3>Rechercher</h3>
             <p>Trouvez facilement des freelances ou des missions
                 selon vos besoins .
+        
             </p>
-        </div>
-        <div>
-            <img src="images/icon1.jpg" alt="icon" width="200">
+            </div>
+           
+
+        <div class="carousel-item text-center">
+            <img src="images/icon1.jpg"   
+            class="rounded-circle mb-3"
+             width="150" height="150"
+            alt="KHADY" >
             <h4>KHADY DIOP</h4>
             <h3>Echanger</h3>
             <p>Discutez directement avec les profils pour mieux 
                 definir votre projet .
             </p>
-        </div>
-        <div>
-            <img src="images/icon2.jpg" alt="icon" width="200">
+            </div>
+        <div class="carousel-item  text-center">
+
+            <img src="images/icon2.jpg"
+             class="rounded-circle mb-3" width="150" height="150"
+             alt="Babacar">
             <h4>Babacar Ndiaye</h4>
             <h3>Lancer le projet</h3>
             <p>Demarrez la collaboration et suivez 
                 l'avancement en toute simplicite .</p>
         </div>
-    </section>
+        </div>
+        </div>
+    
+    <button class="carousel-control-prev"
+ type="button" 
+ data-bs-target="#carouselExample"
+ data-bs-slide="prev">
+ <span class="carousel-control-prev-icon"></span>
+    
+</button>
+
+<button class="carousel-control-next"
+type="button"
+data-bs-target="#carouselExample"
+data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+</section>
+    
     <section>
         <div>
 
@@ -163,8 +211,7 @@
             </p>
             <a href="#" class=""> S'inscrire</a>
         </div>
-    </section> 
-
+    </section>
     <footer class="bg-dark text-light py-5">
         <div class="container">
             <div class="row">

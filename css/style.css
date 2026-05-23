@@ -88,3 +88,65 @@ footer{
         padding: 40px 0;
     }
 }
+/*hero*/
+.hero{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.hero-text h1 {
+    font-size: bold;
+}
+.hero-text p{
+    margin: 20px  0;
+    font-size: 18px;
+}
+.hero-buttons{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.hero-image img{
+    width: 500px;
+    border-radius: 20px;
+}
+/*bento grid*/
+.bento-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.bento-item{
+    background:rgb(158, 158, 226);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px rgba(0, 0,0,0.1);
+}
+.big{
+    grid-column: span 2;
+}
+/*categories*/
+.categories-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.category-card{
+    background:white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+.category-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: #212529;
+    border-radius: 50%;
+}
