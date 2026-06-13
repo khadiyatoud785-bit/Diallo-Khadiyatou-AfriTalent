@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
+400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
+1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
 <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
     
     <section>
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -19,7 +25,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-            <a class="nav-link active" href="index.html" >Acceuil</a>
+            <a class="nav-link active" href="index.html">Acceuil</a>
         </li>
         <li class="nav-item">
             <a class="nav-link active" href="Tarifs.html">Tarifs</a>
@@ -39,27 +45,76 @@
      </ul> 
      </div>
      </div>
+    </nav>
      </section>
-     </div>
-     </nav>
-     
-    <main>
-        <section>
-            <h1>Contactez-nous</h1>
-            <p>Remplissez le formulaire pour nous ecrire.</p>
-        </section>
-        <section>
-            <h2>Formulaire</h2>
-            <p>Nom,prenom,email,sujet,message .</p>
-        </section>
-        <section>
-            <h2>Nos coordonnees</h2>
+    <section class="container py-5 mt-5">
+    <div class="row g-4">
+
+        <!-- FORMULAIRE -->
+        <div class="col-12 col-md-6">
+            <h2>Contactez-nous</h2>
+
+            <form>
+
+                <div class="mb-3">
+                    <label class="form-label">Nom</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Prénom</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Sujet</label>
+                    <select class="form-select">
+                        <option>Demande de devis</option>
+                        <option>Support</option>
+                        <option>Partenariat</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                </div>
+
+                <button class="btn btn-primary">Envoyer</button>
+
+            </form>
+        </div>
+
+        <!-- INFOS CONTACT -->
+        <div class="col-12 col-md-6">
+            <h2>Nos coordonnées</h2>
+
             <p>Email : contact@afritalent.com</p>
-            <p>Telephone : +221 77 000 00 00</p>
-        </section>
-    </main>
-    <footer>
-        <p>©2026 AfriTalent</p>
+            <p>Téléphone : +221 77 000 00 00</p>
+            <p>Adresse : Dakar, Sénégal</p>
+
+            <div class="mt-4">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61744.444567618295!2d-17.50702465794345!3d14.711020811709197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0xb17c17d92d5db21f!2sDakar!5e0!3m2!1sfr!2ssn!4v1781362316035!5m2!1sfr!2ssn"
+        width="100%" 
+        height="250" 
+        style="border:0;" 
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
+
+        </div>
+
+    </div>
+</section>
+    
+
     </footer>
      <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" >
 
