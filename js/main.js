@@ -49,3 +49,59 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            const counter = entry.target;
+            const target = +counter.dataset.target;
+            let current = 0;
+
+            const updateCounter = () => {
+
+                const increment = target / 100;
+
+                if(current < target){
+                    current += increment;
+                    counter.textContent = Math.ceil(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.textContent = target;
+                }
+            };
+
+            updateCounter();
+            counterObserver.unobserve(counter);
+        }
+    });
+});
+
+counters.forEach(counter => {
+    counterObserver.observe(counter);
+});
+
+
+const sections = document.querySelectorAll(".fade-in");
+
+const sectionObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+
+    });
+
+}, {
+    threshold: 0.2
+});
+
+sections.forEach(section => {
+    sectionObserver.observe(section);
+});
+
+console.log("Compteurs trouvés :", counters.length);
