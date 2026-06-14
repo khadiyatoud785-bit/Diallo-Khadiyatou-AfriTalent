@@ -18,10 +18,9 @@
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
 
-            <img src="images/logoo afritalent.jpg" alt="logo" width="120">
-
-
-         <a class="navbar-brand fw-bold" href="#"></a>
+           <a class="navbar-brand" href="#">
+    <img src="images/logoo afritalent.jpg" width="120">
+</a>
         <button class="navbar-toggler" type="button" 
         data-bs-toggle="collapse"data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -47,7 +46,7 @@
             <a class="nav-link active" href="contact.html">Contact</a>
         </li> 
         <li class="nav-item"> 
-            <a class="nav-link active" href="#">Rejoindre AfriTalent</a>
+            <a class="nav-link active" href="contact.html">Rejoindre AfriTalent</a>
         </li>
         <button id="theme-toggle" class="btn btn-outline-light">
     <i class="bi bi-moon-fill"></i>
@@ -68,12 +67,16 @@
         talents africains sur AfriTalent 
     </h2>
     <div class="hero-buttons">
-    <button class="btn btn-primary">Je suis Freelances</button>
-    <button class="btn btn-outline-dark">Je cherche un freelance</button>
+    <a href="" class="btn btn-primary">
+  Je suis freelance
+</a>
+    <a href="freelances.html" class="btn btn-outline-dark">
+  Je cherche un freelance
+</a>
     </div> 
     <div class="hero-stats">
-    <span class="counter" data-target="2500">0</span> Freelances |
-    <span class="counter" data-target="800">0</span> Entreprises |
+    <span class="counter" data-target="2500">0</span> Freelances 
+    <span class="counter" data-target="800">0</span> Entreprises 
     <span class="counter" data-target="1000">0</span> Missions
 </div>
     </div>
@@ -124,18 +127,20 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="category-card">
                     <h3>Developpement Web</h3>
-                    <span class="counter" data-target="3000">0</span> Freelances |
+                    <span class="counter" data-target="3000">0</span> Freelances 
                 </div>
             </div>
 
             
                 <div class="category-card">
+                    <i class="bi bi-palette"></i>
                     <h3>Design UI/UX</h3>
                    <span class="counter" data-target="2500">0</span>
                 </div>
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="category-card">
+                    <i class="bi bi-megaphone-fill"></i>
                     <h3>Marketing Digital</h3>
                     <span class="counter" data-target="8000">0</span>
                 </div>
@@ -143,6 +148,7 @@
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="category-card">
+                    <i class="bi bi-database-fill-add"></i>
                     <h3>Data & IA</h3>
                     <span class="counter" data-target="7500">0</span> 
                 </div>
@@ -150,6 +156,7 @@
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="category-card">
+                    <i class="bi bi-pencil-square"></i>
                     <h3>Redaction Tech</h3>
                 <span class="counter" data-target="1500">0</span> 
                 </div>
@@ -157,6 +164,7 @@
 
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="category-card">
+                    <i class="bi bi-cloud-check-fill"></i>
                     <h3>DevOps & Cloud</h3>
                     <span class="counter" data-target="1000">0</span>
                 </div>
@@ -247,7 +255,7 @@ data-bs-slide="next">
   <div class="container hero-content">
     <h1>Le talent africain à votre service</h1>
     <p>Trouvez ou proposez des missions sur AfriTalent.</p>
-    <a href="#" class="btn btn-primary">S'inscrire maintenant</a>
+    <a href="contact.html" class="btn btn-primary">S'inscrire maintenant</a>
   </div>
 </section>
     <footer class="bg-dark text-light py-5">
@@ -266,12 +274,12 @@ data-bs-slide="next">
                     <h5>Liens utiles</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#" class="text-light text-decoration-none ">
+                            <a href="about.html" class="text-light text-decoration-none ">
                                 Blog
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="text-light text-decoration-none">
+                            <a href="Tarifs.html" class="text-light text-decoration-none">
                                 FAQ
                             </a>
                         </li>
@@ -284,9 +292,9 @@ data-bs-slide="next">
                 </div>
                 <!--colonne4-->
                 <div class="col-md-3">
-                    <h5>Contact</h5>
+                    <a href="contact.html" class="text-light text-decoration-none">Contact</a>
                     <p>
-                        Email : contact@afritalent.com
+                       <a href="mailto:contact@afritalent.com "> Email : contact@afritalent.com</a>
                     </p>
                     <p>Telephone :+221 77 000 00 00</p>
                     <div class="d-flex gap-3">
@@ -301,19 +309,17 @@ data-bs-slide="next">
 
             </div>
             <hr>
-            <p class="text-center">
-                © 2026 AfriTalent-Tous droits reserves
+            
+                <p class="text-center">© <span id="year"></span> AfriTalent</p>
 
-            </p>
 
         </div>
 
     </footer>
 
 
-   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" >
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
 
-</script>  
  <button id="backToTop" class="btn btn-primary">
     
 </button>  

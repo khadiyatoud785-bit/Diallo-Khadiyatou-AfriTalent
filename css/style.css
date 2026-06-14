@@ -22,7 +22,8 @@
 body{
     padding-top: 90px;
     font-family:var(--font-main);
-    background-color: var(--light-color);
+    line-height: 1.6;
+    background-color: var(--light-color) ;
     color: var(--dark-color);
     line-height: 1.6;
 }
@@ -32,8 +33,12 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.navbar{
+    position: relative;
+    z-index: 1000;
+}
 #histoire{
-    background-image: url(../images/histoire2.jpg);
+    background-image: url('../images/histoire2.jpg');
     background-position:center ;
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,15 +71,16 @@ a:hover{
 }
 /*for tarifs*/
 .card img{
-    height: 180px;
-    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
 }
 
 /*cartes*/
 .card{
     border:none;
     border-radius: var(--border-radius);
-    overflow: hidden;
+    /*overflow: hidden;*/
     transition: var(--transition);
 }
 .card:hover{
@@ -98,7 +104,7 @@ img{
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: var(--primary-color);
+  background:linear-gradient(135deg,#7c3aed,#0d6efd);
 }
 
 .hero-content {
@@ -150,6 +156,7 @@ footer{
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
+
 }
 .hero-image img{
     width: 500px;
@@ -163,7 +170,7 @@ footer{
     gap: 20px;
 }
 .bento-item{
-    background:var(--primary-color);
+    background:linear-gradient(135deg,#7c3aed,#0d6efd);
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 5px rgba(0, 0,0,0.1);
@@ -172,9 +179,9 @@ footer{
     grid-column: span 2;
     grid-row: span 2;
 }
-/*.big{
+.big{
     grid-column: span 2;
-}*/
+}
 /*categories*/
 .categories-grid{
     display: grid;
@@ -182,7 +189,7 @@ footer{
     gap: 20px;
 }
 .category-card{
-    background:var(--primary-color);
+    background: linear-gradient(135deg,#7c3aed,#0d6efd);
     padding: 30px;
     border-radius: 20px;
     text-align: center;
@@ -241,7 +248,7 @@ body.dark-mode{
 
 /* Navbar au scroll */
 .navbar.scrolled{
-    background-color:#212529 !important;
+    background-color:#212529 ;
     box-shadow:0 4px 10px rgba(0,0,0,0.2);
     padding-top:5px;
     padding-bottom:5px;

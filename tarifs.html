@@ -8,17 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
 400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
 1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/
+npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <section>
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-              <img src="images/logoo afritalent.jpg" alt="logo" width="120">
+            
 
-
-         <a class="navbar-brand fw-bold" href="#"></a>
+         <a class="navbar-brand fw-bold" href="#">
+             <img src="images/logoo afritalent.jpg" alt="logo" width="120"> </a>
  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav">
     <span class="navbar-toggler-icon"></span>
 </button>
@@ -51,67 +52,146 @@
      </nav>
      </section>
     
-<div class="container mt-5 pt-5 mb-5">
-    <section  class="py-5">
-        <div  class="container">
+    <section class="py-5">
+  <div class="container mt-5">
+
     <div class="row g-4">
 
-        <!-- Carte 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-                <img src="images/tarifs1.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                    <h3>Gratuit</h3>
-                    <h2>0 FCFA/mois</h2>
-                    <ul>
-                        <li>Accès basique</li>
-                        <li>Support email</li>
-                        <li>Stockage illimité</li>
-                        <li>Assistance premium</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+      <!-- GRATUIT -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 text-center p-3">
 
-        <!-- Carte 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-                <img src="images/tarifs2.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                    <span>Populaire</span>
-                    <h3>Pro</h3>
-                    <h2>15000 FCFA/mois</h2>
-                    <ul>
-                        <li>Accès complet</li>
-                        <li>Support rapide</li>
-                        <li>Stockage illimité</li>
-                        <li>Assistance dédiée</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+          <h3>Gratuit</h3>
+          <h2>0 FCFA/mois</h2>
 
+          <ul class="list-unstyled mt-3">
+            <li><i class="bi bi-check-circle text-success"></i> Accès basique</li>
+            <li><i class="bi bi-check-circle text-success"></i> Support email</li>
+            <li><i class="bi bi-x-circle text-danger"></i> Assistance premium</li>
+          </ul>
 
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100">
-                <img src="images/tarifs3.jpg" class="card-img-top" alt="" >
-                <div class="card-body">
-                    <h3>Entreprise</h3>
-                    <h2>50 000 FCFA/mois</h2>
-                    <ul>
-                        <li>Tous les services</li>
-                        <li>Assistance dédiée</li>
-                        <li>Sécurité avancée</li>
-                        <li>Support 24h/24</li>
-                    </ul>
-                </div>
-            </div>
+          <button class="btn btn-outline-primary mt-3">Choisir</button>
+
         </div>
+      </div>
+
+      <!-- PRO -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 text-center p-3 border-primary position-relative">
+
+          <span class="badge bg-primary position-absolute top-0 start-50 translate-middle">
+            Populaire
+          </span>
+
+          <h3>Pro</h3>
+          <h2>15000 FCFA/mois</h2>
+
+          <ul class="list-unstyled mt-3">
+            <li><i class="bi bi-check-circle text-success"></i> Accès complet</li>
+            <li><i class="bi bi-check-circle text-success"></i> Support rapide</li>
+            <li><i class="bi bi-check-circle text-success"></i> Assistance dédiée</li>
+          </ul>
+
+          <button class="btn btn-primary mt-3">Choisir</button>
+
+        </div>
+      </div>
+
+      <!-- ENTREPRISE -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 text-center p-3">
+
+          <h3>Entreprise</h3>
+          <h2>50 000 FCFA/mois</h2>
+
+          <ul class="list-unstyled mt-3">
+            <li><i class="bi bi-check-circle text-success"></i> Tous les services</li>
+            <li><i class="bi bi-check-circle text-success"></i> Sécurité avancée</li>
+            <li><i class="bi bi-check-circle text-success"></i> Support 24h/24</li>
+          </ul>
+
+          <button class="btn btn-dark mt-3">Choisir</button>
+
+        </div>
+      </div>
 
     </div>
-</div>
-</div>
+  </div>
 </section>
+<div class="container my-5">
+
+  <h2 class="text-center mb-4">FAQ</h2>
+
+  <div class="accordion" id="faq">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+          Comment fonctionne AfriTalent ?
+        </button>
+      </h2>
+      <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+        <div class="accordion-body">
+          C'est une plateforme qui connecte freelances et entreprises.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+          Puis-je changer de plan ?
+        </button>
+      </h2>
+      <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Oui, à tout moment depuis votre compte.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">
+          Le plan gratuit est limité ?
+        </button>
+      </h2>
+      <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Oui, il donne accès aux fonctionnalités de base.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q4">
+          Les paiements sont sécurisés ?
+        </button>
+      </h2>
+      <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Oui, toutes les transactions sont sécurisées.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q5">
+          Y a-t-il un support client ?
+        </button>
+      </h2>
+      <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Oui, support disponible selon le plan choisi.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
  <footer class="bg-dark text-light py-5">
         <div class="container">
             <div class="row">
@@ -128,12 +208,12 @@
                     <h5>Liens utiles</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#" class="text-light text-decoration-none ">
+                            <a href="about.html" class="text-light text-decoration-none ">
                                 Blog
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="text-light text-decoration-none">
+                            <a href="Tarifs.html" class="text-light text-decoration-none">
                                 FAQ
                             </a>
                         </li>
@@ -146,9 +226,9 @@
                 </div>
                 <!--colonne4-->
                 <div class="col-md-3">
-                     <a href="contact.html">Contact</a>
+                     <a href="contact.html" class="text-light text-decoration-none">Contact</a>
                     <p>
-                        Email : contact@afritalent.com
+                       <a href="mailto:contact@afritalent.com "> Email : contact@afritalent.com</a>
                     </p>
                     <p>Telephone :+221 77 000 00 00</p>
                     <div class="d-flex gap-3">
@@ -163,17 +243,17 @@
 
             </div>
             <hr>
-            <p class="text-center">
-                © 2026 AfriTalent-Tous droits reserves
+            
+                <p class="text-center">© <span id="year"></span> AfriTalent</p>
 
-            </p>
+        
 
         </div>
 
     </footer>
-<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" >
+<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" ></script>
 
-</script>
+
  <button id="backToTop" class="btn btn-primary">
     
 </button>
