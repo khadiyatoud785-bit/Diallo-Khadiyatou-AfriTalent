@@ -27,16 +27,26 @@ body{
     color: var(--dark-color);
     line-height: 1.6;
 }
+/* MAP */
+.map-frame {
+    width: 100%;
+    border: 0;
+}
+/* ACCUEIL */
 #acceuil{
     background-image: url('../images/acceuil.jpg');
     background-position:center ;
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* NAVBAR */
 .navbar{
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 1000;
 }
+/* HISTOIRE */
 #histoire{
     background-image: url('../images/histoire2.jpg');
     background-position:center ;

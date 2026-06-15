@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
-400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
-1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
 <link rel="stylesheet" href="css/style.css">
+ <title>AfriTalent</title>
 </head>
 <body>
     
 
     
-    <section>
+    <div>
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
          <a class="navbar-brand fw-bold" href="#"></a>
-          <img src="images/logoo afritalent.jpg " alt="logo" width="120">
+          <img src="images/logoo-afritalent.jpg " alt="logo" width="120">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
              </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,7 +27,7 @@
             <a class="nav-link active" href="index.html">Acceuil</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="Tarifs.html">Tarifs</a>
+            <a class="nav-link active" href="tarifs.html">Tarifs</a>
         </li>
         <li class="nav-item">
             <a class="nav-link active" href="freelances.html">Freelances</a>
@@ -42,42 +41,44 @@
         <li class="nav-item"> 
             <a class="nav-link active" href="#">Rejoindre AfriTalent</a>
         </li>
-        <button id="theme-toggle" class="btn btn-outline-light">
+        
+     </ul> 
+     <button id="theme-toggle" class="btn btn-outline-light">
     <i class="bi bi-moon-fill"></i>
 </button>
-     </ul> 
      </div>
      </div>
     </nav>
-     </section>
+     </div>
+     <!-- Section Contact -->
     <section class="container py-5 mt-5">
     <div class="row g-4">
-
-        <!-- FORMULAIRE -->
+ <!-- Formulaire de contact -->
         <div class="col-12 col-md-6">
-            <h2>Contactez-nous</h2>
+    <!-- Titre du formulaire -->          
+            <h1>Contactez-nous</h1>
 
             <form>
-
+ <!-- Champ Nom -->
                 <div class="mb-3">
                     <label class="form-label" >Nom</label>
                     <input type="text" class="form-control" id="name">
                     <small id="nameError"></small>
                 </div>
-
+  <!-- Champ Prénom -->
                 <div class="mb-3">
                     <label class="form-label" >Prénom</label>
                     <input type="text" class="form-control" id="firstname">
-                    <small id="firstname"></small>
+                    <small id="firstnameError"></small>
                 </div>
-
+  <!-- Champ Email -->
                 <div class="mb-3">
                     <label class="form-label" >Email</label>
                     <input type="email" class="form-control" id="email">
                     <small id="emailError"></small>
 
                 </div>
-
+ <!-- Liste déroulante des sujets -->
                 <div class="mb-3">
                     <label class="form-label">Sujet</label>
                     <select class="form-select">
@@ -86,14 +87,15 @@
                         <option>Partenariat</option>
                     </select>
                 </div>
-
+  <!-- Zone de saisie du message -->
                 <div class="mb-3">
                     <label class="form-label">Message</label>
                     <textarea class="form-control" rows="5" id="message"></textarea>
                     <small id="messageError"></small>
                 </div>
-
+    <!-- Bouton d'envoi -->
                 <button type="submit" class="btn btn-primary">Envoyer</button>
+  <!-- Message de succès affiché après validation -->               
                 <p id="successMsg"></p>
 
             </form>
@@ -106,16 +108,18 @@
             <p>Email : contact@afritalent.com</p>
             <p>Téléphone : +221 77 000 00 00</p>
             <p>Adresse : Dakar, Sénégal</p>
-
+ <!-- Carte Google Maps -->
             <div class="mt-4">
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61744.444567618295!2d-17.50702465794345!3d14.711020811709197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0xb17c17d92d5db21f!2sDakar!5e0!3m2!1sfr!2ssn!4v1781362316035!5m2!1sfr!2ssn"
-        width="100%" 
-        height="250" 
-        style="border:0;" 
-        allowfullscreen=""
-        loading="lazy">
-    </iframe>
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61744.444567618295!2d-17.50702465794345!3d14.711020811709197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0xb17c17d92d5db21f!2sDakar!5e0!3m2!1sfr!2ssn!4v1781362316035!5m2!1sfr!2ssn"
+    class="map-frame"
+    height="250"
+    loading="lazy"
+    allowfullscreen>
+</iframe>
+        
+        
+    
 </div>
 
         </div>
@@ -131,7 +135,7 @@
             <div class="row">
                 <!--collone1-->
                 <div class="col-md-3">
-                    <h4>AfriTalent</h4>
+                    <h3>AfriTalent</h3>
                     <p>
                         platforme moderne pour connecter les freelances 
                         africains aux entreprises.
@@ -139,7 +143,7 @@
                 </div>
                 <!--colonne2-->
                 <div class="col-md-3">
-                    <h5>Liens utiles</h5>
+                    <h4>Liens utiles</h4>
                     <ul class="list-unstyled">
                         <li>
                             <a href="about.html" class="text-light text-decoration-none ">

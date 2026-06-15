@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 
     <meta charset="UTF-8">
@@ -8,25 +8,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
-400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
-1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
      <title>AfriTalent</title>
     </head>
     <body>
+        <!-- Barre de navigation principale -->
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+         <!-- Conteneur Bootstrap pour centrer le contenu -->
         <div class="container">
-
+ <!-- Logo du site -->
            <a class="navbar-brand" href="#">
-    <img src="images/logoo afritalent.jpg" width="120">
+    <img src="images/logoo-afritalent.jpg" width="120" alt="">
 </a>
+  <!-- Bouton menu hamburger visible sur petits écrans -->
         <button class="navbar-toggler" type="button" 
-        data-bs-toggle="collapse"data-bs-target="#navbarNav">
+        data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
              </button>
+               <!-- Contenu de la navbar qui se replie sur mobile -->
     <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Liste des liens de navigation alignés à droite -->
     <ul class="navbar-nav ms-auto">
+          <!-- Lien vers la page d'accueil -->
         <li class="nav-item">
 
 
@@ -34,7 +38,7 @@
             <a class="nav-link active" href="index.html" >Acceuil</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="Tarifs.html">Tarifs</a>
+            <a class="nav-link active" href="tarifs.html">Tarifs</a>
         </li>
         <li class="nav-item">
             <a class="nav-link active" href="freelances.html">Freelances</a>
@@ -48,33 +52,41 @@
         <li class="nav-item"> 
             <a class="nav-link active" href="contact.html">Rejoindre AfriTalent</a>
         </li>
-        <button id="theme-toggle" class="btn btn-outline-light">
-    <i class="bi bi-moon-fill"></i>
-</button>
      </ul> 
+      <!-- Bouton permettant d'activer le mode sombre -->
+     <button id="theme-toggle" class="btn btn-outline-light">
+    <i class="bi bi-moon-fill"></i>
+    </button>   
      </div>
      </div>
      
      </nav>
       
      <main>
-
+<!-- Section Hero (principale de la page d'accueil) -->
 <section  id="acceuil" class="hero py-5 fade-in">
+      <!-- Conteneur du texte principal -->
      <div class="hero-text">
+          <!-- Titre principal du site -->
     <h1 class="display-4 fw-bold">Connectez les meilleurs talents tech d'Afrique</h1>
+     <!-- Sous-titre de présentation -->
     <h2>Trouvez ou proposez des missions facilement
          adaptees a vos projets pour collaborer avec les meilleurs 
         talents africains sur AfriTalent 
     </h2>
+      <!-- Boutons d'action principaux -->
     <div class="hero-buttons">
+          <!-- Bouton destiné aux freelances -->
     <a href="" class="btn btn-primary">
   Je suis freelance
 </a>
+ <!-- Bouton destiné aux entreprises recherchant un freelance -->
     <a href="freelances.html" class="btn btn-outline-dark">
   Je cherche un freelance
 </a>
     </div> 
     <div class="hero-stats">
+          <!-- Nombre de freelances -->
     <span class="counter" data-target="2500">0</span> Freelances 
     <span class="counter" data-target="800">0</span> Entreprises 
     <span class="counter" data-target="1000">0</span> Missions
@@ -82,11 +94,13 @@
     </div>
 
 </section>
+<!-- Section expliquant les étapes d'utilisation de la plateforme -->
 <section class="cartes fade-in" >
+     <!-- Titre de la section -->
     <h2 class="text-center mb-5">Comment ça marche</h2>
-
+ <!-- Grille Bento contenant les différentes étapes -->
     <div class="bento-grid">
-
+<!-- Étape 1 : Création du compte -->
         <div class="bento-item big">
             <span class="etape">01</span>
             <h3>Créer un compte</h3>
@@ -118,12 +132,15 @@
 
     </div>
 </section>
+ <!-- Section des catégories de services proposées sur la plateforme -->
 <section>
+      <!-- Conteneur principal -->
     <div class="container" id="Categories">
+          <!-- Titre de la section -->
         <h2 class="text-center mb-4">Categories de services</h2>
-
+ <!-- Ligne Bootstrap contenant les cartes -->
         <div class="row g-4">
-
+  <!-- Catégorie Développement Web -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="category-card">
                     <h3>Developpement Web</h3>
@@ -131,13 +148,13 @@
                 </div>
             </div>
 
-            
+            <div  class="col-12 col-md-6 col-lg-4">
                 <div class="category-card">
                     <i class="bi bi-palette"></i>
                     <h3>Design UI/UX</h3>
                    <span class="counter" data-target="2500">0</span>
                 </div>
-
+            </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="category-card">
                     <i class="bi bi-megaphone-fill"></i>
@@ -174,26 +191,32 @@
     </div>
 </section>
 </main>
+<!-- Section des témoignages clients -->
     <section class="fade-in">
+         <!-- Titre de la section -->
     <h2  class="text-center mb-4"> CEUX QU'ILS DISENT</h2>
-
-        <div id="carouselExample" class="carousel slide"data-bs-ride="carousel">
+<!-- Carrousel Bootstrap des témoignages -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+<!-- Premier témoignage (actif au chargement) -->
             <div class="carousel-item active text-center">
+                 <!-- Photo du témoin -->
             <img src="images/icon3.jpg" 
-            alt="icon"class="rounded-circle mb-3" 
+            alt="icon" class="rounded-circle mb-3" 
             width="150" height="150">
+             <!-- Avis du client -->
             <p>"Grâce à AfriTalent, j'ai trouvé mes premiers clients 
                 en seulement une semaine. La plateforme est simple et efficace."
         
             </p>
-            <h4>Fatou Fall</h4>
+<!-- Métier et nom -->
             <h2>Redactrice Tech</h2>
-            <img style="display:inline-block;"src="images/etoile.jpg" alt="" width="20"height="20">
-            <img style="display:inline-block;"src="images/etoile.jpg" alt="" width="20"height="20">
-            <img style="display:inline-block;"src="images/etoile.jpg" alt="" width="20"height="20">
-            <img style="display:inline-block;"src="images/etoile.jpg" alt="" width="20"height="20">
-            <img style="display:inline-block;"src="images/etoile.jpg" alt="" width="20"height="20">
+            <h3>Fatou Fall</h3>
+ <!-- Note en étoiles -->
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
             
             </div>
            
@@ -205,13 +228,13 @@
             alt="KHADY" >
             <p>"J'aime la diversité des projets proposés. C'est une vraie opportunité pour les créatifs"
             </p>
-            <h4>KHADY DIOP</h4>
             <h2>Designer UI/UX</h2>
-            <img style="display:inline-block;"src="images/etoile.jpg" alt="" width="20"height="20">
-            <img style="display:inline-block;"src="images/etoile.jpg" alt="" width="20"height="20">
-            <img style="display:inline-block;"src="images/etoile.jpg" alt="" width="20"height="20">
-            <img style="display:inline-block;"src="images/etoile.jpg" alt="" width="20"height="20">
-            
+            <h3>KHADY DIOP</h3>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
             </div>
         <div class="carousel-item  text-center">
 
@@ -220,19 +243,17 @@
              alt="Babacar">
              <p>"Nous avons recruté plusieurs freelances
                  qualifiés rapidement. Le processus est fluide et fiable."</p>
-            <h4>Babacar Ndiaye</h4>
             <h2> AfriTalent Devellopeur</h2>
-             <img  style="display:inline-block;" src="images/etoile.jpg" alt="" width="20"height="20">
-             <img style="display:inline-block;" src="images/etoile.jpg" alt="" width="20"height="20">
-             
-             <img style="display:inline-block;"src="images/etoile.jpg" alt="" width="20"height="20">
-             <img style="display:inline-block;" src="images/etoile.jpg" alt="" width="20"height="20">
-             
+            <h3>Babacar Ndiaye</h3>
+             <i class="bi bi-star-fill"></i>
+             <i class="bi bi-star-fill"></i>
+             <i class="bi bi-star-fill"></i>
+             <i class="bi bi-star-fill"></i>
             
         </div>
         </div>
 </div>   
-
+<!-- Bouton précédent du carrousel -->
 <button class="carousel-control-prev"
  type="button" 
  data-bs-target="#carouselExample"
@@ -240,7 +261,7 @@
  <span class="carousel-control-prev-icon"></span>
     
 </button>
-
+<!-- Bouton suivant  du carrousel -->
 <button class="carousel-control-next"
 type="button"
 data-bs-target="#carouselExample"
@@ -249,29 +270,37 @@ data-bs-slide="next">
 </button>
 </section>
     
-    
+ <!-- Section Hero (bannière principale de la page) -->
     <section class="hero py-5  fade-in">
+ <!-- Couche de superposition utilisée pour assombrir ou styliser l'image de fond -->
   <div class="hero-overlay"></div>
+   <!-- Contenu principal de la bannière -->
   <div class="container hero-content">
+      <!-- Titre principal -->
     <h1>Le talent africain à votre service</h1>
+     <!-- Texte de présentation -->
     <p>Trouvez ou proposez des missions sur AfriTalent.</p>
+  <!-- Bouton d'inscription -->   
     <a href="contact.html" class="btn btn-primary">S'inscrire maintenant</a>
   </div>
 </section>
+<!-- Pied de page du site -->
     <footer class="bg-dark text-light py-5">
+   <!-- Conteneur principal -->       
         <div class="container">
+  <!-- Ligne contenant les différentes colonnes -->          
             <div class="row">
-                <!--collone1-->
+<!-- Colonne 1 : Présentation de la plateforme -->
                 <div class="col-md-3">
-                    <h4>AfriTalent</h4>
+                    <h2> AfriTalent</h2>
                     <p>
                         platforme moderne pour connecter les freelances 
                         africains aux entreprises.
                     </p>
                 </div>
-                <!--colonne2-->
+             <!-- Colonne 2 : Liens utiles -->
                 <div class="col-md-3">
-                    <h5>Liens utiles</h5>
+                    <h3>Liens utiles</h3>
                     <ul class="list-unstyled">
                         <li>
                             <a href="about.html" class="text-light text-decoration-none ">
@@ -308,6 +337,7 @@ data-bs-slide="next">
                 </div>
 
             </div>
+              <!-- Ligne de séparation -->
             <hr>
             
                 <p class="text-center">© <span id="year"></span> AfriTalent</p>
